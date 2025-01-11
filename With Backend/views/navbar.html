@@ -1,0 +1,45 @@
+<!-- Bara för referens i alla sidor -->
+<nav class="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-sm border-b border-gray-200">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="/" class="text-2xl font-bold text-[#1a4a6e]">
+          Vattenkultur
+        </a>
+        <div class="hidden md:flex space-x-4">
+          <a href="/" class="text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Hem</a>
+          <a href="/tekniker" class="text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Odlingstekniker</a>
+          <a href="/fordelar" class="text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Fördelar</a>
+          <a href="/nackdelar" class="text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Nackdelar</a>
+        </div>
+        <button class="md:hidden text-[#1a4a6e]" id="menu-toggle">
+          <span id="menu-icon">☰</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white">
+      <div class="container mx-auto px-4 py-2">
+        <a href="/" class="block py-2 text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Hem</a>
+        <a href="/tekniker" class="block py-2 text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Odlingstekniker</a>
+        <a href="/fordelar" class="block py-2 text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Fördelar</a>
+        <a href="/nackdelar" class="block py-2 text-lg transition-colors hover:text-[#1a4a6e] text-gray-600">Nackdelar</a>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+  
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.contains("hidden");
+      if (isOpen) {
+        mobileMenu.classList.remove("hidden");
+        menuIcon.textContent = "✖";
+      } else {
+        mobileMenu.classList.add("hidden");
+        menuIcon.textContent = "☰";
+      }
+    });
+  </script>
+
