@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="navbar.js"></script>
+    <script src="learn-more.js"></script>
     <header>
         <nav>
-            <ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
                 <li><a href="/">Hem</a></li>
                 <li><a href="tekniker">Odlingstekniker</a></li>
                 <li><a href="fordelar">Fördelar</a></li>
@@ -19,6 +26,7 @@
             </ul>
         </nav>
     </header>
+    
 
     <main class="container">
         <section class="hero">
@@ -34,20 +42,22 @@
 
         <section id="learn-more">
             <h2>Grunderna i Vattenkultur</h2>
+            <h5>Klicka för att läsa mer </h5>
             <div class="grid">
-                <div class="card">
+                <div class="card" data-more="Vattenkultur är också mer hållbart än traditionell jordbruk eftersom det minskar vattenanvändning och eliminerar behovet av bekämpningsmedel.">
                     <h3>Vad är Vattenkultur?</h3>
                     <p>Vattenkultur är en odlingsteknik där växter får sina näringsbehov tillgodosedda genom en näringslösning istället för traditionell jord.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-more="Dessutom bidrar vattenkultur till minskade transporter eftersom odling kan ske nära konsumtionsområdet.">
                     <h3>Fördelar</h3>
                     <p>Kraftigare tillväxt, bättre kontroll över näringstillförsel och möjlighet till odling året runt är några av de många fördelarna.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-more="Till exempel används NFT (näringsfilmteknik) ofta för sallad, medan DWC (djupt vattensystem) är idealiskt för tomater.">
                     <h3>Tekniker</h3>
                     <p>Det finns flera olika tekniker som NFT, DWC och aeroponik, var och en med sina unika fördelar för olika typer av odling.</p>
                 </div>
             </div>
+            
         </section>
 
         <section>
@@ -79,6 +89,7 @@
     <footer>
         <p>&copy; 2025 Vattenkultur. Alla rättigheter förbehållna.</p>
         <p>För frågor om upphovsrätt eller begäran om borttagning av bilder, vänligen kontakta: <a href="mailto:dmca@pajsen.se" style="color: white;">dmca@pajsen.se</a></p>
+        <p>Har fått tillstånd av ägarna att använda bilderna i uppgiften</p>
     </footer>
 </body>
 </html>
